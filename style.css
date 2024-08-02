@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --color-yellow: hsl(47, 88%, 63%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-gray-500: hsl(0, 0%, 42%);
+  --color-gray-950: hsl(0, 0%, 7%);
+  --head-font-size: 24px;
+  --title-font-size: 16px;
+  --paragraph-font-size: 14px;
+  --line-heigh: 150%;
+  --font-bold: 800;
+  --font-regular: 500;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-preset-1 {
+  font-size: 24px;
+  line-height: var(--line-heigh);
+  font-weight: var(--font-bold);
+  letter-spacing: 0;
+}
+.text-preset-2 {
+  font-size: 16px;
+  line-height: var(--line-heigh);
+  font-weight: var(--font-regular);
+  letter-spacing: 0;
+}
+.text-preset-3 {
+  font-size: 14px;
+  line-height: var(--line-heigh);
+  font-weight: var(--font-regular);
+  letter-spacing: 0;
+}
+.text-preset-bold-3 {
+  font-size: 14px;
+  line-height: var(--line-heigh);
+  font-weight: var(--font-bold);
+  letter-spacing: 0;
+}
+
+body {
+  font-family: "Figtree";
+  background-color: var(--color-yellow);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  max-width: 384px;
+  background-color: var(--color-white);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  border: 1px solid var(--color-gray-950);
+  box-shadow: 8px 8px #000;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.content .category p {
+  width: fit-content;
+  background-color: var(--color-yellow);
+  color: var(--color-gray-950);
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.content .publish-date {
+  color: var(--color-gray-950);
+}
+
+.content .title {
+  color: var(--color-gray-950);
+}
+
+.content .description {
+  color: var(--color-gray-500);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+  color: var(--color-gray-950);
+}
+
+.author img {
+  width: 32px;
+  height: 32px;
+}
